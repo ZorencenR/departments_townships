@@ -1,0 +1,3 @@
+<%= form_for Client.new, multipart: true do |f| %>
+  <%= f.select :township_id, options_from_collection_for_select(@list_townships, 'id', 'name') %>
+<%end%>
